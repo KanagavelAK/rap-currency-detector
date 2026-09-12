@@ -1,0 +1,11 @@
+{
+  "conf_high": 0.5,
+  "conf_low": 0.25,
+  "imgsz": 640,
+  "overlap_iou_warning": 0.45,
+  "min_sharpness": 60.0,
+  "min_brightness": 40.0,
+  "max_brightness": 225.0,
+  "max_upload_mb": 10,
+  "value_overrides": {}
+}

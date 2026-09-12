@@ -1,0 +1,11 @@
+{
+  "question": "Is this ₹500 note fake?",
+  "route": "out_of_scope",
+  "intent": "authenticity",
+  "routing_method": "rules",
+  "detector_called": false,
+  "status": "insufficient_information",
+  "answer": "I can tell which denomination a note is, but not whether it is genuine. That needs security features like the watermark and security thread, which my model was never trained to check.",
+  "answer_source": "template",
+  "latency_ms": 0.4
+}

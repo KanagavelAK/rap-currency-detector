@@ -1,0 +1,7 @@
+# Training / data preparation / evaluation (Kaggle GPU notebook).
+# After installing, pin exact versions for reproducibility:
+#   pip freeze | grep -iE "^(ultralytics|torch|torchvision|numpy|pillow|pyyaml)==" > requirements-train.lock
+ultralytics
+pillow
+numpy
+pyyaml

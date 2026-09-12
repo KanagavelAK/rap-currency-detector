@@ -1,0 +1,76 @@
+{
+  "question": "How much money is in this photo?",
+  "route": "detector",
+  "intent": "total_value",
+  "routing_method": "rules",
+  "detector_called": true,
+  "status": "partial",
+  "answer": "I'm confident about 1 ₹500 note and 1 ₹100 note, which adds up to ₹600. I also found 1 note I couldn't identify reliably, so the real total is at least ₹600.",
+  "answer_source": "template",
+  "evidence": {
+    "confident_notes": 2,
+    "counts_by_value": {
+      "100": 1,
+      "500": 1
+    },
+    "confirmed_total": 600,
+    "uncertain_notes": 1,
+    "uncertain_best_guesses": [
+      {
+        "value": 100,
+        "confidence": 0.3127
+      }
+    ],
+    "possible_extra_value": 100,
+    "overlapping_notes": false,
+    "image_quality": {
+      "sharpness": 11697.46,
+      "brightness": 224.13
+    },
+    "image_issues": [],
+    "thresholds": {
+      "conf_high": 0.5,
+      "conf_low": 0.25
+    }
+  },
+  "detections": [
+    {
+      "class_id": 5,
+      "class_name": "500",
+      "value": 500,
+      "confidence": 0.9412,
+      "box": {
+        "x1": 112.4,
+        "y1": 80.2,
+        "x2": 598.7,
+        "y2": 330.9
+      }
+    },
+    {
+      "class_id": 3,
+      "class_name": "100",
+      "value": 100,
+      "confidence": 0.8835,
+      "box": {
+        "x1": 640.0,
+        "y1": 95.5,
+        "x2": 1101.3,
+        "y2": 342.8
+      }
+    },
+    {
+      "class_id": 3,
+      "class_name": "100",
+      "value": 100,
+      "confidence": 0.3127,
+      "box": {
+        "x1": 300.2,
+        "y1": 410.0,
+        "x2": 720.9,
+        "y2": 650.4
+      }
+    }
+  ],
+  "inference_ms": 184.3,
+  "latency_ms": 191.2
+}

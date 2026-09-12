@@ -1,0 +1,11 @@
+{
+  "question": "What can you do?",
+  "route": "general",
+  "intent": "capabilities",
+  "routing_method": "rules",
+  "detector_called": false,
+  "status": "answered",
+  "answer": "I detect Indian banknotes (₹10 to ₹2,000) in a photo and answer questions about them, like how many notes there are or their total value. I can't check whether notes are genuine, count coins or read serial numbers.",
+  "answer_source": "template",
+  "latency_ms": 0.4
+}

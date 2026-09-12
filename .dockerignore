@@ -1,0 +1,15 @@
+.git
+datasets
+own_photos
+raw_photos
+runs
+reports
+docs
+tests
+samples
+.venv
+venv
+__pycache__
+*.zip
+.env
+weights/*.pt

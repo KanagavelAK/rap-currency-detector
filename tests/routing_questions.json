@@ -1,0 +1,192 @@
+[
+  {
+    "question": "How much money is in this photo?",
+    "route": "detector",
+    "intent": "total_value"
+  },
+  {
+    "question": "What's the total?",
+    "route": "detector",
+    "intent": "total_value"
+  },
+  {
+    "question": "How many rupees are here?",
+    "route": "detector",
+    "intent": "total_value"
+  },
+  {
+    "question": "Is the total ₹1,200?",
+    "route": "detector",
+    "intent": "total_value"
+  },
+  {
+    "question": "Add up the cash for me",
+    "route": "detector",
+    "intent": "total_value"
+  },
+  {
+    "question": "How many notes are there?",
+    "route": "detector",
+    "intent": "count_notes"
+  },
+  {
+    "question": "Count the banknotes",
+    "route": "detector",
+    "intent": "count_notes"
+  },
+  {
+    "question": "How many ₹500 notes are there?",
+    "route": "detector",
+    "intent": "count_by_value"
+  },
+  {
+    "question": "how many 100 rupee notes",
+    "route": "detector",
+    "intent": "count_by_value"
+  },
+  {
+    "question": "How many two hundred rupee notes do I have here?",
+    "route": "detector",
+    "intent": "count_by_value"
+  },
+  {
+    "question": "Is there a 2000 note?",
+    "route": "detector",
+    "intent": "presence_value"
+  },
+  {
+    "question": "Is this a ₹50 note?",
+    "route": "detector",
+    "intent": "presence_value"
+  },
+  {
+    "question": "Are there any notes in this picture?",
+    "route": "detector",
+    "intent": "presence_any"
+  },
+  {
+    "question": "What's the largest note?",
+    "route": "detector",
+    "intent": "largest"
+  },
+  {
+    "question": "Which is the smallest denomination here?",
+    "route": "detector",
+    "intent": "smallest"
+  },
+  {
+    "question": "What is the most common note?",
+    "route": "detector",
+    "intent": "most_common"
+  },
+  {
+    "question": "List the notes you can see",
+    "route": "detector",
+    "intent": "breakdown"
+  },
+  {
+    "question": "Is this enough money for dinner?",
+    "route": "detector",
+    "intent": "subjective"
+  },
+  {
+    "question": "Is this note fake?",
+    "route": "out_of_scope",
+    "intent": "authenticity"
+  },
+  {
+    "question": "Are these real or counterfeit?",
+    "route": "out_of_scope",
+    "intent": "authenticity"
+  },
+  {
+    "question": "How much are these coins worth?",
+    "route": "out_of_scope",
+    "intent": "coins"
+  },
+  {
+    "question": "What is the serial number?",
+    "route": "out_of_scope",
+    "intent": "serial_number"
+  },
+  {
+    "question": "Is the note torn?",
+    "route": "out_of_scope",
+    "intent": "condition"
+  },
+  {
+    "question": "How many dollars is this?",
+    "route": "out_of_scope",
+    "intent": "foreign_currency"
+  },
+  {
+    "question": "Is this still legal tender?",
+    "route": "out_of_scope",
+    "intent": "legal_status"
+  },
+  {
+    "question": "How many ₹30 notes are there?",
+    "route": "out_of_scope",
+    "intent": "unknown_denomination"
+  },
+  {
+    "question": "What can you do?",
+    "route": "general",
+    "intent": "capabilities"
+  },
+  {
+    "question": "How does this work?",
+    "route": "general",
+    "intent": "capabilities"
+  },
+  {
+    "question": "Which model do you use?",
+    "route": "general",
+    "intent": "model_info"
+  },
+  {
+    "question": "Hello",
+    "route": "general",
+    "intent": "greeting"
+  },
+  {
+    "question": "Who prints Indian currency?",
+    "route": "general",
+    "intent": "general_knowledge"
+  },
+  {
+    "question": "What's the capital of France?",
+    "route": "general",
+    "intent": "unrelated"
+  },
+  {
+    "question": "Tell me about the notes",
+    "route": "detector",
+    "intent": "unclear"
+  },
+  {
+    "question": "Do I have more than 1000 rupees?",
+    "route": "detector",
+    "intent": "total_value"
+  },
+  {
+    "question": "Which note appears the most?",
+    "route": "detector",
+    "intent": "most_common"
+  },
+  {
+    "question": "What's the sum of the 2000 and 500 notes?",
+    "route": "detector",
+    "intent": "count_by_value"
+  },
+  {
+    "question": "How much is 500 + 200?",
+    "route": "general",
+    "intent": "unrelated"
+  },
+  {
+    "question": "What denominations do you see?",
+    "route": "detector",
+    "intent": "breakdown"
+  }
+]

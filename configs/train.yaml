@@ -1,0 +1,23 @@
+# RT-DETR fine-tuning config. Every non-default value has a reason you can defend.
+model: rtdetr-l.pt        # COCO-pretrained RT-DETR-L from Ultralytics (transfer learning)
+
+epochs: 60
+patience: 15              # stop early if validation mAP hasn't improved for 15 epochs
+imgsz: 640                # notes are large objects; 640 keeps training fast on a T4
+batch: 8                  # RT-DETR is memory-hungry; drop to 4 if you get CUDA out-of-memory
+workers: 2
+seed: 42
+deterministic: false      # RT-DETR's deformable attention (grid_sample) has no deterministic CUDA
+                          # backward, so true would not make runs bit-identical and would slow training.
+                          # The seed still fixes weight init, data order and augmentation sampling.
+optimizer: auto
+amp: true                 # if losses become NaN, set to false (known RT-DETR + mixed precision issue)
+plots: true
+
+# Augmentation decisions
+fliplr: 0.0               # mirrored banknotes never appear in real photos; flipping teaches fake patterns
+flipud: 0.0
+hsv_h: 0.015              # keep hue shifts tiny: colour is a key cue for denomination
+hsv_s: 0.5
+hsv_v: 0.4                # brightness variation helps with dim rooms and glare
+degrees: 0.0              # rotation would inflate axis-aligned boxes; real tilts come from the data

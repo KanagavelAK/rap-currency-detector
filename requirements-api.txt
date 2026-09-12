@@ -1,0 +1,9 @@
+# API runtime. Pin exact versions after installing: pip freeze > requirements-api.lock
+fastapi
+uvicorn[standard]
+python-multipart
+ultralytics
+pillow
+numpy
+pyyaml
+requests
